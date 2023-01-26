@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali&display=swap" rel="stylesheet">
     <title>Adam Asmaca</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Adam Asmaca</h1>
-    <p>Gizlenmiş kelimeyi bulmak için bir harf giriniz.</p>
+    <h1>Hangman Game</h1>
+    <p>Enter a letter to find the hidden word.</p>
+    <p>Its a Progrmming Language</p>
 
     <div class="container">
         <svg height="250" width="250" class="grafik">
@@ -35,7 +39,7 @@
         </svg>
 
         <div id="wrong-letters">
-            <h3>Hatalı Harfler</h3>
+            <h3>Incorrect Letter</h3>
             <span id = "wrong-letters-letters"></span>
         </div>
 
@@ -47,9 +51,9 @@
     <div id="popup-container">
         <div class="popup">
             <h2 id="success-message"></h2>
-            <button id="play-again">Play Again!</button>
+            <button class="btn btn-primary" id="play-again">Play Again!</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
